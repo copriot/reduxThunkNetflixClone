@@ -6,3 +6,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.banner {
+  filter: drop-shadow(0 0 80px gray);
+}

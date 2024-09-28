@@ -15,3 +15,5 @@
 # Resim Temel Url
 
 - https://image.tmdb.org/t/p/original
+
+--

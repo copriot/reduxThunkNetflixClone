@@ -1,12 +1,14 @@
 # Libraries
 
-- react-router-dom
-- redux
-- react-redux
-- redux-thunk
-- tailwind
-- axios
-- millify
+- **@splidejs/react-splide**: Modern slayt gösterimi için bir React bileşeni.
+- **axios**: API ile etkileşim için HTTP istekleri yapar.
+- **millify**: Sayıları okunabilir formatta gösterir (örn. 1K).
+- **react-dom**: React bileşenlerini DOM'a yerleştirir.
+- **react-redux**: Redux ile React arasında durum yönetimi sağlar.
+- **react-router-dom**: Yönlendirme ve sayfa geçişlerini yönetir.
+- **redux**: Uygulama durumunu yönetmek için kullanılır.
+- **redux-thunk**: Asenkron Redux eylemlerini yönetir.
+- **tailwind**: Utility-first CSS framework, hızlı UI tasarımı için.
 
 # API
 
@@ -16,4 +18,4 @@
 
 - https://image.tmdb.org/t/p/original
 
---
+!()[NetflixClone.gif]

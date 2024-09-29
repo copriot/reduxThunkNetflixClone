@@ -18,4 +18,4 @@
 
 - https://image.tmdb.org/t/p/original
 
-!()[NetflixClone.gif]
+![](NetflixClone.gif)

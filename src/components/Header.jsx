@@ -5,8 +5,8 @@ const Header = () => {
     <header>
       <Link to={"/"}>
         <img
-          className="max-w-[150px]"
-          src="src/public/netflix_logo.svg"
+          className="max-w-[120px] mb-10"
+          src="../src/public/netflix_logo.svg"
           alt="netflix_logo"
         />
       </Link>

@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 import Loader from "./Loader";
 import Error from "./Error";
 import { baseImgUrl } from "../utils/constants";
+import { Link } from "react-router-dom";
 const Hero = () => {
   const { movies, isLoading, error } = useSelector((store) => store.movie);
   //0-19 arası rastgele sayı üret
@@ -9,7 +10,7 @@ const Hero = () => {
 
   //üretilen sayıya göre movies dizisinin indexindeki elemana eris
   const movie = movies[i];
-  console.log(movie);
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 my-10">
       {isLoading || !movie ? (
@@ -28,9 +29,12 @@ const Hero = () => {
               </span>
             </p>
             <div className="flex gap-5">
-              <button className="p-2 bg-rose-600 rounded hover:bg-rose-700">
+              <Link
+                to={`/movie/${movie.id}`}
+                className="p-2 bg-rose-600 rounded hover:bg-rose-700"
+              >
                 Filmi İzle
-              </button>
+              </Link>
               <button className="p-2 bg-cyan-600 rounded hover:bg-cyan-700">
                 Listeye Ekle
               </button>

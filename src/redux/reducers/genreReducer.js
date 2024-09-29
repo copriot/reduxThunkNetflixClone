@@ -11,9 +11,9 @@ const genreReducer = (state = initialState, { type, payload }) => {
         case Actions.GENRES_LOADING:
             return { ...state, isLoading: true };
         case Actions.GENRES_SUCCESS:
-            return state;
+            return { ...state, isLoading: false, error: null, genres: payload };
         case Actions.GENRES_ERROR:
-            return state;
+            return { ...state, isLoading: false, error: payload };
         default:
             return state;
     }
